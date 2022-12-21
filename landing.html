@@ -1,1 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    </head>
+    <body>
+        <div class="titles">
+            <h1>DB</h1>
+            <h2>Please log in:</h2>
+        </div>
+        <div class="userlabel">
+            <label for="username" class="userprompt">Enter Username:</label>
+            <br>
+            <input type="text" id="user" class="user" minlength="6" 
+            maxlength="30" required size="10">
+        </div>
+        <div class="passlabel">
+            <label for="password" class="passprompt">Enter Password:</label>
+            <br>
+            <input type="password" id="password" minlength="6" 
+            maxlength="30" required size="10">
+        </div>
+        <div>
+            <button class="checkcreds"
+                    type="button">
+                    Check Login Details                
+            </button>
+        </div>
+    </body>
+    <style>
+        .titles{
+            color: rgba(0, 0, 0, 0.85);
+            font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        }
+        .userprompt{
+            color: rgba(0, 0, 0, 0.85);
+            font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+            font-size: 20pt;
+        }
+        .passprompt{
+            color: rgba(0, 0, 0, 0.85);
+            font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+            font-size: 20pt;
+        }
+        .checkcreds{
+            align-items: center;
+            background-color: #FFFFFF;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: .25rem;
+            box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+            box-sizing: border-box;
+            color: rgba(0, 0, 0, 0.85);
+            cursor: pointer;
+            display: inline-flex;
+            font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            justify-content: center;
+            line-height: 1.25;
+            margin: 0;
+            min-height: 3rem;
+            padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+            position: relative;
+            text-decoration: none;
+            transition: all 250ms;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            vertical-align: baseline;
+            width: auto;
+        }
+
+        .checkcreds:focus {
+            border-color: rgba(0, 0, 0, 0.15);
+            box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+            color: rgba(0, 0, 0, 0.65);
+        }
+
+        .checkcreds:hover {
+            transform: translateY(-1px);
+        }
+
+        .checkcreds:active {
+            background-color: #F0F0F1;
+            border-color: rgba(0, 0, 0, 0.15);
+            box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+            color: rgba(0, 0, 0, 0.65);
+            transform: translateY(0);
+        }       
+    </style>
+</html>
 
