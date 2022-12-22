@@ -1,0 +1,104 @@
+        /*Background: */
+        .background{
+            transform-origin: 0%;
+            height: 1698px;
+            background-color: #CCEDEF;
+            position: absolute;
+            top: -1000px;
+            left: 0;
+            right: 0;
+        }
+
+        /*Buttons and forms:*/        
+        .titles{
+            color: rgba(0, 0, 0, 0.85);
+            text-align: center;
+            position: relative;
+            font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        }
+        .loginForm{
+            justify-content: center;
+            position:relative;
+            top: 60%;
+            left: 40%;
+
+            border-radius: 8px;
+            box-shadow: 0 1px 4px 0;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            width:400px;
+            height:auto;
+            background-color: #F0F0F1;
+        }
+        .userlabel{
+            padding-bottom: 8px;
+            padding-top: 5px;
+            width:100%;
+            display: flex;
+            position: relative;
+            justify-content: center;
+        }
+        .passlabel{
+            padding-bottom: 8px;
+            width:100%;
+            display: flex;
+            position: relative;
+            justify-content: center;            
+        }
+        .logPrompts{
+            color: rgba(0, 0, 0, 0.85);
+            display: flex;
+            text-align: center;
+            font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+            font-size: 15pt;
+        }
+        .credsbtn{
+            width:100%;
+            display: flex;
+            justify-content: center;
+        }
+        .checkcreds{
+            align-items: center;
+            background-color: #FFFFFF;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: .25rem;
+            box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+            box-sizing: border-box;
+            color: rgba(0, 0, 0, 0.85);
+            cursor: pointer;
+            display: inline-flex;
+            font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            justify-content: center;
+            line-height: 1.25;
+            margin: 0;
+            min-height: 3rem;
+            padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+            position: relative;
+            text-decoration: none;
+            transition: all 250ms;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            vertical-align: baseline;
+            width: auto;
+        }
+
+        .checkcreds:focus {
+            border-color: rgba(0, 0, 0, 0.15);
+            box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+            color: rgba(0, 0, 0, 0.65);
+        }
+
+        .checkcreds:hover {
+            transform: translateY(-1px);
+        }
+
+        .checkcreds:active {
+            background-color: #F0F0F1;
+            border-color: rgba(0, 0, 0, 0.15);
+            box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+            color: rgba(0, 0, 0, 0.65);
+            transform: translateY(0);
+        }
