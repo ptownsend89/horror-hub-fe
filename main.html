@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>The Movie Hub</title>
+    <link href="main.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="backgroundblock1"></div>
+        <div class="backgroundblock2"></div>
+        <header>
+            <div class="title">
+                <h1>THE MOVIE HUB</h1>
+            </div>
+        </header>
+        <nav>
+            <div class="navbar">
+                <li> <!--To be ordered horizontally in flexbox nav bar
+                        Drop down menu for TV and Movies with other options
+                        i.e. highest rated/new?-->
+                    <ul>TV</ul>
+                    <ul>Movies</ul>
+                    <ul>Search</ul>
+                    <ul>My Watchlist</ul>
+                    <ul>My Account</ul>
+                    <ul>Logout</ul>
+                </li>
+            </div>
+        </nav>
+        <section>
+            <h2>Welcome to The Movie Hub. Your source for new, old and popular TV and Movies</h2>
+            <form action="">
+                <label for="search" class="broadSearch">
+                    <input type="text" id="search" class="searchBar" minlength="3" size="10">
+                    <button class="searchbtn" type="button">
+                        <span>Search</span>
+                    </button>
+                </label>
+            </form>
+        </section>
+        <section>
+            <h2>Popular</h2> <!--Popular - carousel of image/links to most popular movies. Temporarily just use
+                                select group of jpgs-->
+            <div class="carousel">
+                <div class="popularImgs">
+                    <!--<div class="imgNo">1/6</div>-->
+                    <img src="https://www.dreadcentral.com/wp-content/uploads/2021/02/The-Fifth-Element-2-750x422.jpg" style="width:100%">
+                </div>
+                <div class="popularImgs">
+                    <div class="imgNo">2/6</div>
+                    <img src="https://cdn.vox-cdn.com/thumbor/NXJwA3HTZ9bw9SjOoP9btQ5sIrg=/0x0:6000x3472/1200x675/filters:focal(2339x1153:3299x2113)/cdn.vox-cdn.com/uploads/chorus_image/image/66018523/the_grudge_DF_12789a.0.png" style="width:100%">
+                </div>
+                <div class="popularImgs">
+                    <div class="imgNo">3/6</div>
+                    <img src="https://www.spectatornews.com/wp-content/uploads/2019/04/Us-movie-theory_ANGELL-900x474.jpg" style="width:100%">
+                </div>
+                <div class="popularImgs">
+                    <div class="imgNo">4/6</div>
+                    <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/7333473FAC34EF0F7A920906F083378C58FE486EEA730EC5247A0BA83D8E81AD/scale?width=1200&aspectRatio=1.78&format=jpeg" style="width:100%">
+                </div>
+                <div class="popularImgs">
+                    <div class="imgNo">5/6</div>
+                    <img src="https://www.filmlinc.org/wp-content/uploads/2015/07/pineappleexpress1-1600x900-c-default.jpg" style="width:100%">
+                </div>
+                <div class="popularImgs">
+                    <div class="imgNo">6/6</div>
+                    <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/C2640C169658B9CF7CC8F8CDC921D8716DE8EEF38247C5FCDD2EA48CEC057F9D/scale?width=1200&aspectRatio=1.78&format=jpeg" style="width:100%">
+                </div>
+                <div class="displayimg">
+                    <img src="showImg(1)" alt="">
+                </div>
+            </div>
+            <form action=""> <!--here call js function for previous img-->
+                <div class="previmg">
+                    <button class="prevbtn" type="button" onclick="navImgs(-1)"></button>
+                </div>
+            </form>
+            <form action=""> <!--here call js function for next img-->
+                <div class="nextimg">
+                    <button class="nextbtn" type="button" onclick="navImgs(1)"></button>
+                </div>
+            <form action="">
+        </section>
+        <script src="carouselflip.js"></script>
+    </body>
+</html>
