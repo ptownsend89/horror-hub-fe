@@ -6,37 +6,30 @@
     <link href="landing.css" rel="stylesheet">
     </head>
     <body>
-        <div class="background">
-            <!-- empty for background only -->
+        <div class="backgroundblock1"></div>
+        <div class="backgroundblock2"></div>
+        <div class="title">
+            <h1>THE MOVIE HUB</h1>
         </div>
-        <div class="titles">
-            <div class="pageTitle">
-                <h1>DB</h1>
-            </div>                
-            <h2>Please log in:</h2>
-        </div>
-        <div class="loginForm">
-            <div class="userlabel">
-                <label for="username" class="userprompt"></label>
-                <span class="logPrompts"><p>Enter Username:</p></span>
-                <!--Need to put inputs inside a new div to style and keep them on a new line?-->
-                <input type="text" id="user" class="user" minlength="6" maxlength="30" required size="10"
-                aria-required="true">
-            </div>
-            <div class="passlabel">
-                <label for="password" class="passprompt"></label>
-                <span class="logPrompts"><p>Enter Password:</p></span>
-                <div class="pass">
-                    <input type="password" id="password" minlength="6" maxlength="30" required size="10"
-                    aria-required="true">
-                </div>
+        <form action="www.google.com" class="loginForm">
+            <span class="loginTitle">Sign in to your account:</span>
+            <div class="inputPromptsAndBoxes">
+                <label for="username" class="userprompt">
+                    <span class="logPrompts">Email:</span>
+                    <input type="text" id="username" class="user" minlength="6" maxlength="30" required size="10"
+                    required>
+                </label>
+                <label for="password" class="passprompt">
+                    <span class="logPrompts">Password:</span>
+                    <input type="password" id="password" class="pass" minlength="6" maxlength="30" required size="10"
+                    required>
+                </label>
             </div>
             <div class="credsbtn">
                 <button class="checkcreds" type="button">
                         Check Login Details                
                 </button>
-            </div>            
-        </div>
+            </div>        
+        </form>    
     </body>
 </html>
-
